@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="globalcssDillon.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="site-details">
+        <img src="Images/nature_9309055.png" alt="Site Logo" />
+        <h1>Life on Land</h1>
+      </div>
+      <div class="site-links">
+        <ul>
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="volunteer.html">Volunteer</a></li>
+                            <li><a href="Table.html">Table</a></li>
+                            <li><a href="profile.html">User Profile</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="Sitemap.html">Sitemap</a></li>
+                            <li><a href="team.html">Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="validation-main">
+      <div class="validation-navbar">
+        <h2>Content</h2>
+        <ol>
+          <li><a href="#content-overview">Content Overview</a></li>
+          <li><a href="#technical-description">Technical Description</a></li>
+          <li><a href="#organization">Organization</a></li>
+          <li><a href="#links">Links</a></li>
+          <li>
+            <a href="#challenges-and-lessons-learned"
+              >Challenges and Lessons Learned</a
+            >
+          </li>
+          <li><a href="#accessibility">Accessibility</a></li>
+          <li><a href="#compliance">Compliance</a></li>
+          <li><a href="#references">References</a></li>
+        </ol>
+      </div>
+      <div class="validation-content">
+        <h1 id="content-overview">1. Content Overview</h1>
+        <p>
+          <b>Name:</b> Dillon Wagisha <br />
+          <b>Role:</b> Student 4 (Group 5)
+        </p>
+        <h2>Completed Tasks/Pages:</h2>
+        <ol>
+          <li>
+            <b>Home Page:</b> The landing page that introduces the Life on Land
+            community
+          </li>
+          <li>
+            <b>Sitemap:</b> A page displaying a simple site structure for easy
+            navigation
+          </li>
+          <li>
+            <b>User Profile:</b> A user-centric page displaying personal details
+            and relevant content for a specific member
+          </li>
+        </ol>
+        <h1 id="technical-description">2. Technical Description</h1>
+        <h2 id="home-content-page-editor">Home Page & Content</h2>
+        <p><b>HTML Structure</b></p>
+        <ol>
+          <li><b>&lt;header&gt;:</b> Contains the logo and navigation links</li>
+          <ul>
+            <li><b>&lt;img&gt;:</b> Used to display the site logo</li>
+            <li>
+              <b>&lt;nav&gt;:</b> Contains navigation links to other pages (ex:-
+              Home, Sitemap, User Profile)
+            </li>
+            <li>
+              <b>Purpose:</b> To create a cohesive navigation system across the
+              site
+            </li>
+          </ul>
+          <li><b>&lt;section class="welcome"&gt;</b></li>
+          <ul>
+            <li>
+              Contains the welcome message and an image to visually enhance the
+              introduction to the site
+            </li>
+            <li>
+              <b>&lt;h1&gt;:</b> Displays the main heading (Life on Land
+              Community), creating the title for the page
+            </li>
+            <li>
+              <b>&lt;p&gt;:</b> Provides a brief description of the site’s goals
+            </li>
+            <li>
+              <b>Purpose:</b> The welcome section introduces visitors to the
+              core values of the website
+            </li>
+          </ul>
+        </ol>
+        <p><b>CSS Styling</b></p>
+        <ol>
+          <li>
+            <b>Flexbox Layout:</b> Used throughout the page to structure and
+            align items, particularly in the navbar and <i>.welcome</i> section
+          </li>
+          <ul>
+            <li>
+              <b><i>.navbar:</i></b> Positioned using <i>display: flex</i> to
+              place site details and navigation in a row, with space between
+              them
+            </li>
+            <li>
+              <b><i>.site-links .active:</i></b> The "active" class is used to
+              highlight the current page link in the navigation bar
+            </li>
+          </ul>
+          <li><b>Responsive Design:</b></li>
+          <ul>
+            <li>
+              The use of <i>vw</i> (viewport width) and <i>vh</i> (viewport
+              height) ensures the page scales according to the screen size.
+              However, for smaller screens, using <i>rem</i> or <i>em</i> might
+              be better for readability
+            </li>
+          </ul>
+        </ol>
+        <h2 id="sitemap-page-editor">Sitemap Page</h2>
+        <p><b>HTML Structure</b></p>
+        <ol>
+          <li><b>&lt;section class="sitemap"&gt;</b></li>
+          <ul>
+            <li>
+              Displays a map-like structure of the site to help users navigate
+              between different pages
+            </li>
+            <li>
+              <b>&lt;svg&gt;:</b> The site’s layout is represented using an SVG
+              map, which is visually appealing and scalable
+            </li>
+          </ul>
+        </ol>
+        <p><b>CSS Styling</b></p>
+        <ol>
+          <li><b>Flexbox & Grid Layouts</b></li>
+          <ul>
+            <li>
+              <i>display: flex</i> is used to align the content properly, while
+              <i>display: grid</i> can be applied to ensure better organization
+              and control over the elements in the map
+            </li>
+          </ul>
+          <li><b>Hover Effects</b></li>
+          <ul>
+            <li>
+              <b>rect:hover:</b> When the user hovers over an area of the
+              sitemap, the background color changes to improve user interaction
+            </li>
+          </ul>
+          <li><b>accessibility Considerations</b></li>
+          <ul>
+            <li>
+              <b>&lt;a&gt; links:</b> Ensure the sitemap links are accessible,
+              with proper focus styles to highlight the link when the user
+              navigates using the keyboard
+            </li>
+          </ul>
+        </ol>
+        <h2 id="user-profile-page-editor">User Profile Page</h2>
+        <p><b>HTML Structure</b></p>
+        <ol>
+          <li><b>&lt;section class="profile"&gt;</b></li>
+          <ul>
+            <li>
+              Contains the user’s profile, including their image, skills, and
+              goals
+            </li>
+            <li><b>&lt;img&gt;:</b> Displays the user’s profile picture</li>
+            <li>
+              <b>&lt;h2&gt; and &lt;p&gt;:</b> These elements are used to
+              display the user's personal information, such as name, skills, and
+              goals
+            </li>
+          </ul>
+        </ol>
+        <p><b>CSS Styling</b></p>
+        <ol>
+          <li>
+            <b>Flexbox Layout:</b> Used to position the profile image and the
+            other content side-by-side
+          </li>
+          <ul>
+            <li>
+              <b><i>.user:</i></b> Uses flexbox to align the image and the
+              user's details horizontally
+            </li>
+          </ul>
+          <li><b>Responsiveness</b></li>
+          <ul>
+            <li>
+              <b>Media Queries:</b> Adjust the layout for smaller screen sizes
+              by stacking elements vertically
+            </li>
+          </ul>
+          <li><b>Styling for accessibility</b></li>
+          <ul>
+            <li>
+              <b>Contrast:</b> Proper contrast between background and text to
+              ensure readability for users with visual impairments
+            </li>
+            <li>
+              <b>Alt Text for Images:</b> Proper alt text for all images to
+              ensure the content is accessible to screen readers
+            </li>
+          </ul>
+        </ol>
+        <h1 id="organization">3. Organization</h1>
+        <p>The content is divided logically into sections for each page:</p>
+        <ol>
+          <li>
+            <b>Home Page:</b> Introduction and core values of the community
+          </li>
+          <li><b>Sitemap:</b> An interactive map for site navigation</li>
+          <li>
+            <b>User Profile:</b> Displays detailed information about a user and
+            their interactions within the community
+          </li>
+        </ol>
+        <p>
+          Each section is styled and structured appropriately using the HTML and
+          CSS techniques described earlier
+        </p>
+        <h1 id="links">4. Links</h1>
+        <p>Here are the links to the pages I’ve implemented:</p>
+        <ol>
+          <li>
+            <b>Home Page:</b> <a href="home.html">Home</a> |
+            <a href="validation_ST4.html"
+              >Validation Report</a
+            >
+          </li>
+          <li>
+            <b>Content Page:</b> <a href="content.html">Content</a> |
+            <a href="validation_ST4.html"
+              >Validation Report</a
+            >
+          </li>
+          <li>
+            <b>Sitemap Page:</b> <a href="sitemap.html">Sitemap</a> |
+            <a href="validation_ST4.html"
+              >Validation Report</a
+            >
+          </li>
+          <li>
+            <b>User Profile Page:</b> <a href="profile.html">User Profile</a> |
+            <a href="validation_ST4.html"
+              >Validation Report</a
+            >
+          </li>
+        </ol>
+        <p>
+          You can also access the validation page that verifies the
+          implementation of these pages and their compliance with web standards
+        </p>
+        <h1 id="challenges-and-lessons-learned">
+          5. Challenges and Lessons Learned
+        </h1>
+        <h2><b>Challenges</b></h2>
+        <ol>
+          <li>
+            <b>Responsive Design:</b> Ensuring the layout worked on all screen
+            sizes was challenging. The use of <i>vw</i> and <i>vh</i> units
+            worked well for larger screens, but smaller screens required
+            adjustments using media queries
+          </li>
+          <li>
+            <b>accessibility:</b> Ensuring proper alt text and making the site
+            accessible for screen readers was a learning process. I had to make
+            sure all images had alt attributes and that all interactive elements
+            were focusable and accessible
+          </li>
+        </ol>
+        <h2><b>Lessons Learned</b></h2>
+        <ol>
+          <li>
+            I learned the importance of thorough testing on various devices to
+            ensure responsiveness
+          </li>
+          <li>
+            I gained experience in improving accessibility by using semantic
+            HTML and testing keyboard navigation
+          </li>
+        </ol>
+        <h1 id="accessibility">6. Accessibility</h1>
+        <h2>Specific accessibility Considerations</h2>
+        <ol>
+          <li>
+            <b>Alt Text:</b> All images have descriptive alt text for screen
+            readers
+          </li>
+          <li>
+            <b>Keyboard Navigation:</b> Ensured that all links and interactive
+            elements are keyboard-navigable
+          </li>
+          <li>
+            <b>Color Contrast:</b> Checked that text and background colors meet
+            WCAG accessibility standards for readability
+          </li>
+        </ol>
+        <h1 id="compliance">7. Compliance</h1>
+        <p>
+          The pages I’ve created comply with Janet Regulations by following best
+          practices for:
+        </p>
+        <ol>
+          <li>
+            <b>Semantic HTML:</b> Ensures the proper use of elements like
+            <i>&lt;header&gt;</i>, <i>&lt;footer&gt;</i>,
+            <i>&lt;section&gt;</i>, and <i>&lt;nav&gt;</i>
+          </li>
+          <li>
+            <b>WCAG compliance:</b> Implemented accessibility features like alt
+            text, keyboard navigation, and color contrast to meet WCAG standards
+          </li>
+        </ol>
+        <h1 id="references">8. References</h1>
+        <ol>
+          <li>
+            <b>Lecture Notes:</b> Notes from
+            <i>4COSC011C.2 Web Design and Development</i>
+          </li>
+          <li><b>External Resources:</b></li>
+          <ul>
+            <li>W3Schools for HTML and CSS documentation</li>
+            <li>
+              Mozilla Developer Network (MDN) for accessibility standards and
+              guidelines
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+    <footer>
+      <div class="site-details">
+        <img src="IMAGES/nature_9309055(b&w).png" alt="Site Logo" />
+        <h1>Life on Land</h1>
+        <p>
+          Life on Land promotes sustainable living, <br />
+          self-sufficiency, and outdoor skills for a thriving, <br />
+          nature-connected lifestyle
+        </p>
+      </div>
+      <div class="footer-site-links">
+        <h2>Links</h2>
+        <p>
+          <a href="pageEditor_ST1.html">Student 1 Editor</a> |
+          <a href="pageEditor_ST2.html">Student 2 Editor</a> |
+          <a href="pageEditor_ST3.html">Student 3 Editor</a> |
+          <a href="pageEditor_ST4.html">Student 4 Editor</a>
+      </p>
+      <p>
+          <a href="validation_ST1.html">Validation 1</a> |
+          <a href="validation_ST2.html">Validation 2</a> |
+          <a href="validation_ST3.html">Validation 3</a> |
+          <a href="validation_ST4.html">Validation 4</a>
+      </p>
+      </div>
+    </footer>
+  </body>
+</html>

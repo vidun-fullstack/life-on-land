@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page | Life on Land</title>
+    <link rel="stylesheet" href="globalCSS.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    #Monkey{
+        height: auto;
+        width: 700px;
+        margin-top: 10px;
+    }
+    .feedback{
+        top: 116px;
+        position:absolute;
+        left: 675px;
+        justify-content: center;
+
+        background-color: white;
+        width: 630px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+        
+    }
+    
+    .form-group {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+
+    .row {
+    display: flex;
+    gap: 5px;}
+
+    .col {
+    flex: 1;
+    left: 20px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+    }
+
+    .emoji{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .emoji-label img{
+        height: 50px; 
+        width: 50px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .emoji-label:hover img{
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .emoji-options:checked + label img{
+        background-color: rgb(255, 255, 255);
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    
+    .emoji-options{
+        display: none;}
+    
+    .feedback h2,h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .feedback .date-group{
+        text-align: center;
+        margin-left: 190px;
+
+    }
+    .emoji{
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="datetime-local"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #000000;
+        background-color: #efefef;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        display: block;
+        width: 60%;
+        padding: 12px;
+        background-color: #21b1ff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-right: 50px;
+    }
+
+    button[type="reset"]{
+        display: block;
+        width: 60%;
+        padding: 12px;
+        background-color: #bf4000;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-left: 110px;
+    }
+    button[type="reset"]:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    button[type="submit"]:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+    .wrapper2{
+        margin-left: 130px;
+    }
+
+    /* Required field indicator */
+    .required::after {
+        content: " *";
+        color: #e74c3c;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="IMAGES/trees.png" alt="Website Logo">
+                <h1></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html" class="active">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="wrapper2">
+                <img src="emoji\page image.jpg" alt="Monkey image" id="Monkey">
+            </div>
+            <form id="feedbackForm" action="submit_feedback.php" method="post">
+                <div class="feedback">
+                    
+                    <h2 id="head1">Share your feedback</h2><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="name" class="required">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="phone" class="required">Telephone number</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option value="">Select</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="address" id="address1" class="required">Enter your address</label><br>
+                                <textarea name="address" id="address" rows="5" cols="30" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="feedback" id="comment" class="required">Enter your feedback</label><br>
+                                <textarea name="feedback" id="feedback" rows="5" cols="30" maxlength="200" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>How was your experience?</h3><br>
+                        <div class="emoji">
+                            <input type="radio" name="mood" id="angry" class="emoji-options" value="angry" required>
+                            <label for="angry" class="emoji-label"><img src="emoji/angry.png" alt="Angry"></label>
+                            
+                            <input type="radio" name="mood" id="angry2" class="emoji-options" value="angry2">
+                            <label for="angry2" class="emoji-label"><img src="emoji/angry2.png" alt="Angry2"></label>
+
+                            <input type="radio" name="mood" id="normal" class="emoji-options" value="normal">
+                            <label for="normal" class="emoji-label"><img src="emoji/normal.png" alt="normal"></label>
+
+                            <input type="radio" name="mood" id="happy1" class="emoji-options" value="happy1">
+                            <label for="happy1" class="emoji-label"><img src="emoji/happy1.png" alt="Angry" class="active"></label>
+
+                            <input type="radio" name="mood" id="happy2" class="emoji-options" value="happy2">
+                            <label for="happy2" class="emoji-label"><img src="emoji/happy2.png" alt="Angry"></label>
+                        </div>
+                    <div class="row">
+                        <div class="form-group">    
+                            <div class="date-group" id="datetime">
+                                <label for="submitDate" class="required">Submit date</label>
+                                <input type="datetime-local" id="submitDate" name="submitDate" required><br><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <button type="reset" id="reset">Reset</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <button type="submit" id="submit-button">Submit Feedback</button>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </form>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Website Name. All rights reserved.</p>
+            <p>
+                <a href="pageEditor_ST1.html">Student 1 Editor</a> |
+                <a href="pageEditor_ST2.html">Student 2 Editor</a> |
+                <a href="pageEditor_ST3.html">Student 3 Editor</a> |
+                <a href="pageEditor_ST4.html">Student 4 Editor</a>
+            </p>
+            <p>
+                <a href="validation_ST1.html">Validation 1</a> |
+                <a href="validation_ST2.html">Validation 2</a> |
+                <a href="validation_ST3.html">Validation 3</a> |
+                <a href="validation_ST4.html">Validation 4</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

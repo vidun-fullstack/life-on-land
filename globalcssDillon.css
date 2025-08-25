@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw;
+}
+
+.site-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.site-details img {
+  width: 3vw;
+  height: auto;
+  padding-left: 0.5vw;
+}
+
+.site-details h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5vw;
+  margin-left: 0.3vw;
+}
+
+.site-links {
+  justify-content: flex-end;
+}
+
+.site-links .active {
+  background-color: seagreen;
+  color: white;
+  padding: 0 0.5vw 0 0.5vw;
+}
+
+.site-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-links a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  margin-right: 2vw;
+  font-family: "Poppins", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3vw;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3vw;
+  padding-bottom: 0.5vw;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9vw;
+  font-weight: 600;
+  padding-bottom: 1.5vw;
+}
+
+.main {
+  display: flex;
+}
+
+.profile {
+  justify-content: flex-start;
+  width: 41vw;
+  height: auto;
+  margin: 1vw 1vw 1vw 1.2vw;
+  border-radius: 5%;
+}
+
+.user {
+  display: flex;
+  align-content: center;
+}
+
+.user-details {
+  padding-top: 3vw;
+}
+
+.user img {
+  width: 12vw;
+  height: auto;
+  filter: hue-rotate(100);
+  border-radius: 50%;
+  padding: 2vw;
+}
+
+.user-other-details {
+  padding: 0 2.5vw 2vw 2vw;
+}
+
+.user-skills-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-skills-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.user-skills-title h2 {
+  justify-content: flex-start;
+}
+
+.user-skills-title p {
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.user-skills-1,
+.user-skills-2,
+.user-skills-3,
+.user-skills-4,
+.user-skills-5 {
+  display: flex;
+  padding-bottom: 1vw;
+  align-content: center;
+}
+
+.user-skills-1 {
+  padding-top: 0.5vw;
+}
+
+.user-skills-5 {
+  padding: 0;
+}
+
+.user-skills-icon img {
+  width: 2vw;
+  padding-right: 0.5vw;
+}
+
+.user-skills p {
+  padding: 0;
+}
+
+svg {
+  position: absolute;
+}
+
+.stats {
+  justify-content: flex-end;
+  width: 49vw;
+  height: auto;
+  outline: darkgray 0.2vw solid;
+  margin: 1vw 1vw 2vw 0.5vw;
+  border-radius: 5%;
+  padding: 2vw;
+}
+
+.user-goals img {
+  width: 5vw;
+  height: auto;
+  padding: 1vw 3vw 0 3vw;
+}
+
+.user-goals {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+
+.user-un-goals img {
+  width: 8vw;
+  height: auto;
+  padding: 0 1vw 2vw 0;
+}
+
+.user-un-goals {
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2vw;
+}
+
+th,
+td {
+  border: 1px solid darkgray;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8vw;
+  font-weight: 500;
+  text-align: center;
+}
+
+th {
+  background-color: gray;
+  color: white;
+}
+
+.availability-free,
+.availability-available {
+  background-color: lightgreen;
+}
+
+.user-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-contact img {
+  width: 32vw;
+  height: 55vh;
+  justify-self: flex-end;
+}
+
+.user-contact-form {
+  justify-self: flex-start;
+}
+
+.user-contact-form p {
+  padding: 0.5vw 0 0.2vw 0;
+}
+
+.input-box input {
+  width: 20vw;
+  height: 3vh;
+}
+
+.input-box-message input {
+  width: 40vh;
+  height: 20vh;
+}
+
+.user-contact .button {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8vw;
+  font-weight: 700;
+  width: 50%;
+  background: white;
+  border: none;
+  outline: 3px solid black;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 0.5vw;
+  margin-top: 1vw;
+}
+
+footer {
+  background-color: seagreen;
+  color: white;
+  display: flex;
+  padding: 2vw;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer .site-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+
+footer .footer-site-links {
+  text-align: left;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.sitemap {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+}
+
+.sitemap svg {
+  width: 70%;
+  height: auto;
+  margin-top: 15vw;
+}
+
+.sitemap rect {
+  transition: fill 0.5s ease;
+}
+.sitemap rect:hover {
+  fill: lightgreen;
+}
+.sitemap text {
+  transition: fill 0.5s ease;
+}
+.sitemap rect:hover + text {
+  fill: white;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  width: 100;
+  height: 92.5vh;
+  align-items: center;
+}
+
+.welcome-content {
+  justify-content: flex-start;
+  margin-left: 4vw;
+}
+
+.welcome img {
+  justify-content: flex-end;
+  width: 45.7vw;
+  height: auto;
+  margin-right: 1.5vw;
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100;
+  padding: 4vw;
+  align-items: center;
+  background-color: rgb(68, 199, 125);
+  color: white;
+  text-shadow: 2px 2px seagreen;
+}
+
+.mission img {
+  width: 40vw;
+  margin-left: 5vw;
+}
+
+.find-here {
+  text-align: center;
+  padding: 2vw;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courses img {
+  width: 13vw;
+  height: 27vh;
+  margin-top: 2vw;
+}
+
+.courses-1,
+.courses-2,
+.courses-3,
+.courses-4,
+.courses-5 {
+  padding-left: 3vw;
+}
+
+.content-1 h1 {
+  text-align: center;
+  margin-top: 1vw;
+}
+
+.involve {
+  display: flex;
+  align-items: start;
+  padding: 4vw;
+}
+
+.involve img {
+  width: 5vw;
+  margin-bottom: 1vw;
+}
+
+.involve-2,
+.involve-3,
+.involve-4,
+.involve-5 {
+  margin-left: 3vw;
+}
+
+.validation-main {
+  display: flex;
+}
+
+.validation-navbar {
+  margin: 2vw 3vw 3vw 3.5vw;
+  outline: 0.5vw solid darkgray;
+  padding: 1vw 1vw 2vw 2vw;
+  width: 22.5vw;
+  height: 30vh;
+  border-radius: 5%;
+}
+
+.validation-navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.validation-content {
+  width: 59vw;
+  padding: 1vw 4vw 4vw 4vw;
+}
+
+.validation-content p,
+li {
+  font-weight: 500;
+}
+
+.validation-content ul,
+ol {
+  margin-left: 1vw;
+}
+
+.validation-content h1,
+.validation-content h2,
+.validation-content p {
+  padding: 0;
+  margin: 1vw 0 1vw 0;
+}
+
+.validation-content .validation-screenshot {
+  width: 95%;
+  outline: 0.2vw solid darkgray;
+  margin: 0.5vw 0 2vw 0;
+}

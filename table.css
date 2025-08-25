@@ -1,0 +1,136 @@
+.table-intro {
+    margin-bottom: 2rem;
+}
+
+.data-table-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.data-table caption {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: var(--dark-color);
+    color: white;
+    position: relative;
+}
+
+/* Zebra striping for rows */
+.data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+}
+
+.table-logo {
+    height: 40px;
+    width: auto;
+}
+
+.with-thumbnail {
+    position: relative;
+    padding-top: 3.5rem;
+    margin-top: 3.5rem;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+}
+.thumbnail {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: translateX(-50%) scale(1.5);
+}
+
+.with-icon {
+    font-size: 1.2rem;
+}
+
+.data-table a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.data-table a:hover {
+    color: var(--dark-color);
+    text-decoration: underline;
+}
+
+.data-table tfoot {
+    background-color: var(--light-color);
+    font-style: italic;
+}
+
+.legend {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.legend .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.legend .description {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .data-table {
+        font-size: 0.9rem;
+    }
+    
+    .data-table th, 
+    .data-table td {
+        padding: 0.75rem 0.5rem;
+    }
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page | Life on Land</title>
+    <link rel="stylesheet" href="globalCSS.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    .heading-after::after{
+        content: "";
+        background-color: #ffbc02;
+        display: block;
+        width: 100px;
+        height: 5px;
+        margin: auto;
+        margin-top: 5PX;
+    }
+
+        .name{
+            color: black;
+        }
+
+        .team-members{
+            background-image: linear-gradient(rgb(255, 238, 0), rgb(255, 0, 0));
+            position: relative;
+            box-sizing: border-box;
+            overflow: hidden;
+        } 
+
+        .team-members * {
+            transition: all .6s ease-in-out;
+        }
+
+        .team-members img{
+            width: 100%;
+            z-index: 1;
+        }
+
+        .team-members:hover img{
+            opacity: .2;
+        }
+
+        .team-members .team-decription{
+            position: absolute;
+            display: inline-block;
+            width: 60%;
+            top: 50%;
+            left: 50%;
+            color: rgb(243, 243, 243);
+            transform: translate(-50%, -50%) scale(0);
+            font-weight: 700;
+            z-index: 2;
+        }
+
+        .team-members:hover .team-decription{
+            transform: translate(-50%, -50%) scale(1) rotate(360deg);
+        }
+
+        /* Fix for clickable links */
+        .team-members .team-decription a{
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+            pointer-events: auto !important;
+        }
+
+        /* Enhanced logo visibility */
+        .logorow {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .logorow a {
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+            border-radius: 50%;
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .logorow a:hover {
+            transform: scale(1.2);
+        }
+
+        .logorow img.logo {
+            width: 30px;
+            height: 30px;
+            display: block;
+            filter: none;
+            opacity: 1;
+        }
+
+        /* Make name links more visible on hover */
+        .team-members .team-decription a:hover .name{
+            color: #ffffff;
+        }
+
+        .colmembers{
+            display: flex;
+            flex: 1;
+            left: auto;
+            margin-right: 20px;
+        }
+
+        .colmembers:last-child {
+            margin-right: 0;
+        }
+
+        .row{
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .heading-after{
+            text-align: center;
+        }
+        .pb-3{
+            color: rgb(0, 0, 105);
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="IMAGES/trees.png" alt="Website Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="team.html"  class="active">Team</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1 class="heading-after">Meet Our Experts</h1>
+            <div class="row">
+                <div class="colmembers">
+                    <div class="team-members">
+                        <img class="" src="emoji/member1.png" alt="member1 photo">
+                        <div class="team-decription">
+                            <h3 class="name" >Vidun Hewavitharana</h3>
+                            <h5 class="pb-3">Web Designer</h5>
+                            <div class="logorow">
+                                <a href="https://github.com/vidun-fullstack"><img src="emoji/github.png" alt="github logo" class="logo"></a>
+                                <a href="#"><img src="emoji/linkedin.png" alt="linkedin logo" class="logo"></a>
+                                <a href="mailto:vidunhewavitharana@gmail.com"><img src="emoji/email.png" alt="email logo" class="logo"></a>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="colmembers">
+                    <div class="team-members">
+                        <img class="" src="emoji/member2.png" alt="member2 photo">
+                        <div class="team-decription">
+                            <h3 class="name">Chethin Maneth</h3>
+                            <h5 class="pb-3">Web Designer</h5>
+                            <div class="logorow">
+                                <a href="https://github.com/Chethinmaneth"><img src="emoji/github.png" alt="github logo" class="logo"></a>
+                                <a href="https://www.linkedin.com/in/chethin-maneth-709a08209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="emoji/linkedin.png" alt="linkedin logo" class="logo"></a>
+                                <a href="mailto:chethin.20240891@iit.ac.lk"><img src="emoji/email.png" alt="email logo" class="logo"></a>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+                <div class="colmembers">
+                    <div class="team-members">
+                        <img class="" src="emoji/member3.png" alt="member3 photo">
+                        <div class="team-decription">
+                            <h3 class="name">Dillon Wagisha</h3>
+                            <h5 class="pb-3">Web Designer</h5>
+                            <div class="logorow">
+                                <a href="#"><img src="emoji/github.png" alt="github logo" class="logo"></a>
+                                <a href="#"><img src="emoji/linkedin.png" alt="linkedin logo" class="logo"></a>
+                                <a href="mailto:dillon.20232129@iit.ac.lk"><img src="emoji/email.png" alt="email logo" class="logo"></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="colmembers">
+                    <div class="team-members">
+                        <img class="" src="emoji/member4.png" alt="member4 photo">
+                        <div class="team-decription">
+                            <h3 class="name">Kalaru Weerakoon</h3>
+                            <h5 class="pb-3">Web Designer</h5>
+                            <div class="logorow">
+                                <a href="https://github.com/kalaru-333"><img src="emoji/github.png" alt="github logo" class="logo"></a>
+                                <a href="#"><img src="emoji/linkedin.png" alt="linkedin logo" class="logo"></a>
+                                <a href="mailto:mrkalarukk@gmail.com"><img src="emoji/email.png" alt="email logo" class="logo"></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Website Name. All rights reserved.</p>
+            <p>
+                <a href="pageEditor_ST1.html">Student 1 Editor</a> |
+                <a href="pageEditor_ST2.html">Student 2 Editor</a> |
+                <a href="pageEditor_ST3.html">Student 3 Editor</a> |
+                <a href="pageEditor_ST4.html">Student 4 Editor</a>
+            </p>
+            <p>
+                <a href="validation_ST1.html">Validation 1</a> |
+                <a href="validation_ST2.html">Validation 2</a> |
+                <a href="validation_ST3.html">Validation 3</a> |
+                <a href="validation_ST4.html">Validation 4</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
